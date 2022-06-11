@@ -237,8 +237,6 @@ $text353535: #353535;
     @include buttom-svg;
 }
 //fourth section
-.fourth-block {
-}
 .fourth-block-container {
     max-width: 1240px;
     margin: 0 auto;
@@ -258,9 +256,6 @@ $text353535: #353535;
 .fourth-box-inner {
     flex-basis: calc(25% - 50px);
 }
-.fourth-box-inner__wrapper-img {
-
-}
 .fourth-box-inner__img {
     max-width: 100%;
     box-shadow: 10px 10px 6px #00000029;
@@ -277,6 +272,69 @@ $text353535: #353535;
 .fourth-box-inner__name--margin {
     margin: 20px auto 0;
 }
+//fifth section
+.fifth-section {
+    background-color: #e4e4e4;
+}
+.fifth-section-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.fifth-insurance {
+    padding: 35px 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.fifth-insurance-left {
+    display: flex;
+    align-items: center;
+    flex-basis: 70%;
+}
+.fifth-insurance-wrapper {
+    margin-left: 30px;
+}
+.fifth-insurance__img {
+    width: 150px;
+}
+.fifth-insurance-left__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #4d4d4d;
+    margin: 0 0 10px;
+}
+.fifth-insurance-left__text {
+    font-size: 25px;
+    line-height: 28px;
+    color: #4d4d4d;
+    text-align: left;
+    margin: 0;
+}
+.fifth-insurance-right {
+    flex-basis: 30%;
+    text-align: center;
+}
+.fifth-insurance-right__description {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #4d4d4d;
+    margin: 0 0 5px;
+    span {
+        font-weight: 900;
+    }
+}
+.fifth-insurance-right__link {
+    @include buttom();
+}
+.fifth-insurance-right__svg {
+    @include buttom-svg();
+}
+
+
+
 
 
 @media (max-width: 1610px) {
@@ -290,6 +348,17 @@ $text353535: #353535;
     }
     .third-section-block--padding {
         padding: 0;
+    }
+}
+@media(max-width: 1100px) {
+    .fifth-insurance-left {
+        flex-basis: 100%;
+    }
+    .fifth-insurance-right {
+        flex-basis: 100%;
+    }
+    .fifth-insurance-right--mt {
+        margin-top: 50px;
     }
 }
 @media(max-width: 992px) {
@@ -375,6 +444,20 @@ $text353535: #353535;
     }
     .fourth-box-inner {
         flex-basis: calc(50% - 20px);
+    }
+    .fifth-insurance-left {
+        display: block;
+        text-align: center;
+    }
+    .fifth-insurance-wrapper {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .fifth-insurance-left__title {
+        margin: 0px 0 20px;
+    }
+    .fifth-insurance-right__description {
+        font-size: 20px;
     }
 
 }
