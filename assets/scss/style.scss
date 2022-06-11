@@ -12,6 +12,13 @@ body{
 $textWait: #fff;
 $text353535: #353535;
 
+@mixin title {
+    text-align: center;
+    font-size: clamp(40px,5vw,45px);
+    line-height: 50px;
+    font-weight: 600;
+    color: #f45757;   
+}
 @mixin buttom {
     min-height: 80px;
     display: -webkit-inline-box;
@@ -146,11 +153,7 @@ $text353535: #353535;
     margin: 0 auto;
 }
 .first-section-title {
-    text-align: center;
-    font-size: clamp(40px,5vw,45px);
-    line-height: 50px;
-    font-weight: 600;
-    color: #f45757;
+    @include title;
 }
 .first-section-box {
     display: flex;
@@ -233,6 +236,47 @@ $text353535: #353535;
 .third-section-block__svg {
     @include buttom-svg;
 }
+//fourth section
+.fourth-block {
+}
+.fourth-block-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.fourth-block-title {
+    @include title();
+}
+.fourth-block-title--mb {
+    margin-bottom: 30px;
+}
+.fourth-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+.fourth-box-inner {
+    flex-basis: calc(25% - 50px);
+}
+.fourth-box-inner__wrapper-img {
+
+}
+.fourth-box-inner__img {
+    max-width: 100%;
+    box-shadow: 10px 10px 6px #00000029;
+}
+.fourth-box-inner__name {
+    width: 100%;
+    max-width: 250px;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #353535;
+    font-weight: 600;
+}
+.fourth-box-inner__name--margin {
+    margin: 20px auto 0;
+}
 
 
 @media (max-width: 1610px) {
@@ -269,6 +313,13 @@ $text353535: #353535;
     .third-section-block--padding {
         padding: 15px 0;
     }
+    .fourth-box {
+        gap: 30px;
+    }
+    .fourth-box-inner {
+        flex-basis: calc(25% - 30px);
+    }
+    
 }
 @media(max-width: 850px) {
     .first-section-block {
@@ -319,6 +370,12 @@ $text353535: #353535;
     .third-section-block__wrapper-link {
         padding-bottom: 15px;
     }
+    .fourth-box {
+        gap: 20px;
+    }
+    .fourth-box-inner {
+        flex-basis: calc(50% - 20px);
+    }
 
 }
 @media(max-width: 576px) {
@@ -354,6 +411,12 @@ $text353535: #353535;
         padding: 30px 0;
     }
     .first-section-block {
+        flex-basis: calc(100%);
+    }
+    .fourth-box {
+       text-align: center;
+    }
+    .fourth-box-inner {
         flex-basis: calc(100%);
     }
     
