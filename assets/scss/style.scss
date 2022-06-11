@@ -82,6 +82,12 @@ $textWait: #fff;
     margin: 10px 0 20px;
     border-radius: 20px;
     padding: 10px 0;
+    transition: .5s;
+    &:hover {
+        color: #fff;
+        background-color: #f60404;
+        transition: .5s;
+    }
 }
 .header-left-block__svg {
     width: 39px;
@@ -99,4 +105,90 @@ $textWait: #fff;
     flex-basis: 50%;
     background: url(../img/slider.jpg) right center no-repeat;
     background-size: cover;
+}
+
+
+@media (max-width: 1610px) {
+    .header-left-block__wrapper {
+        width: 80%;
+    }
+}
+@media(max-width: 1220px) {
+    .header-left-block__wrapper {
+        width: 100%;
+    }
+}
+@media(max-width: 992px) {
+    .header-left-block__description {
+        text-align: left;
+        max-width: 100%;
+    }
+    .header-left-block__none {
+        display: none;
+    }
+    .header-left-block__mini-description {
+        max-width: 100%;
+        text-align: left;
+    }
+    .header-right-block {
+        background-position-x: 80%;
+    }
+}
+@media(max-width: 780px) {
+    .header-right-block {
+        display: none;
+    }
+    .header-left-block {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .header-left-block::before {
+        content: "";
+        max-width: 100%;
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .header-left-block__description {
+        text-align: center;
+    }
+    .header-left-block__wrap-button {
+        margin: auto;
+    }
+    .header-left-block__mini-description {
+        text-align: center;
+    }
+}
+@media(max-width: 576px) {
+    .header-left-block__wrap-button {
+        width: 100%;
+    }
+    .header-left-block__button {
+        padding: 6px 0;
+        margin: 20px 0;
+        font-size: 35px;
+    }
+    .header-left-block__svg {
+        width: 29px;
+    }
+    .header-left-block__title {
+        font-size: 25px;
+        line-height: 30px;
+        margin: 20px 0;
+    }
+    .header-left-block__description {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .header-left-block__mini-description {
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .header-left-block__none {
+        display: block;
+    }
+    .header-box {
+        height: 100%;
+        padding: 30px 0;
+    }
+    
 }
