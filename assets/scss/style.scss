@@ -332,6 +332,21 @@ $text353535: #353535;
 .fifth-insurance-right__svg {
     @include buttom-svg();
 }
+//sixth section
+.sixth-section-container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.sixth-section-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sixth-section-box__keys {
+    flex-basis: 12%;
+}
+.sixth-section-box__key {
+    max-width: 100%;
+}
 
 
 
@@ -459,6 +474,9 @@ $text353535: #353535;
     .fifth-insurance-right__description {
         font-size: 20px;
     }
+    .sixth-section-box__keys {
+        flex-basis: 25%;
+    }
 
 }
 @media(max-width: 576px) {
@@ -501,6 +519,9 @@ $text353535: #353535;
     }
     .fourth-box-inner {
         flex-basis: calc(100%);
+    }
+    .sixth-section-box__keys {
+        flex-basis: 50%;
     }
     
 }
