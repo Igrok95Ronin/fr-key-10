@@ -635,6 +635,30 @@ body {
   width: 100%;
 }
 
+.colorh6 {
+  text-align: center;
+  font-size: clamp(40px, 5vw, 45px);
+  line-height: 50px;
+  font-weight: 600;
+  color: #f45757;
+  font-size: 30px;
+}
+
+.block__link {
+  background-color: #F45757;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.block__link:hover {
+  color: #fff;
+  background-color: #f60404;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 @media (max-width: 1610px) {
   .header-left-block__wrapper {
     width: 80%;
@@ -838,6 +862,10 @@ body {
 
   .ninth-section-text {
     font-size: 19px;
+  }
+
+  .colorh6 {
+    font-size: 26px;
   }
 }
 @media (max-width: 576px) {

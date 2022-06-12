@@ -422,8 +422,6 @@ $text353535: #353535;
     color: #000;
 }
 //ninth section
-.ninth-section {
-}
 .ninth-section-container {
     max-width: 1240px;
     margin: 0 auto;
@@ -448,6 +446,22 @@ $text353535: #353535;
 }
 .ninth-section-inner__img {
     width: 100%;
+}
+.colorh6 {
+    @include title();
+    font-size: 30px;
+}
+.block__link {
+    background-color: #F45757;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    transition: .5s;
+    &:hover {
+        color: #fff;
+        background-color: #f60404;
+        transition: .5s;
+    }
 }
 
 
@@ -609,6 +623,9 @@ $text353535: #353535;
     }
     .ninth-section-text {
         font-size: 19px;
+    }
+    .colorh6 {
+        font-size: 26px;
     }
 
 }
