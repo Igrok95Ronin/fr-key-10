@@ -461,6 +461,81 @@ body {
   max-width: 100%;
 }
 
+.seventh-section {
+  background: url(../img/slider-dispo.jpg) center right;
+  background-size: cover;
+}
+
+.seventh-section-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.seventh-section-box {
+  color: #fff;
+  text-align: center;
+}
+
+.seventh-section-box__title {
+  font-size: clamp(20px, 2vw, 25px);
+  line-height: 35px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.seventh-section-box__link {
+  min-height: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px auto;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background: #F45757;
+}
+.seventh-section-box__link:hover {
+  color: #fff;
+  background-color: #f60404;
+}
+
+.seventh-section-box__svg {
+  max-width: 39px;
+  margin-right: 10px;
+}
+
+.seventh-section-box__text {
+  font-size: clamp(20px, 2vw, 25px);
+  line-height: 35px;
+  font-weight: 900;
+  margin: 0;
+}
+
 @media (max-width: 1610px) {
   .header-left-block__wrapper {
     width: 80%;
@@ -619,6 +694,19 @@ body {
   .sixth-section-box__keys {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
+  }
+
+  .seventh-section-container {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+
+  .seventh-section-container {
+    height: 45vh;
   }
 }
 @media (max-width: 576px) {
